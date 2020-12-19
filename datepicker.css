@@ -1,0 +1,71 @@
+@keyframes glow {
+	from {
+	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+	}
+	to {
+	  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+	}
+  }
+  h1{
+	color: aliceblue;
+  }
+  table {
+	box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+	text-align: center;
+	margin: auto;
+  }
+  
+  .prev,
+  .next {
+	cursor: pointer;
+  }
+  .header {
+	height: 80px;
+	color: white;
+	font-size: 20px;
+	padding: 3px;
+	
+  }
+  .week {
+	font-size: 15px;
+	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+	color: #fff;
+  }
+  thead th{
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	margin-bottom: 1rem;
+	color: #fff;
+	text-align: center;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+ }
+  tbody td {
+	height: 20px;
+	width: 20px;
+	padding: 15px;
+	font-size: 15px;
+	text-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.5);
+	transition: background-color 0.2s;
+	color: #fff;
+  }
+  .selected:hover {
+	background: #b94f89;
+	opacity: 0.8;
+	box-shadow: 0 0 3px #cf9fba, 0 0 40px #a52d6f, 0 0 80px #a0658e;
+	cursor: pointer;
+  }
+  .dimmed {
+	color: lightgrey;
+	opacity: 0.5;
+  }
+  .active {
+	background: #ac3275;
+	opacity: 0.8;
+	box-shadow: 0 0 8px #cf9fba, 0 0 40px #c090aa, 0 0 80px #bbaab6;
+  }
+  
+	 
+	  
